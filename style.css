@@ -1,0 +1,267 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    color: #ab0b6e;
+}
+.logo {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Keeps it from shifting */
+    height: 120px;
+    width: 120px;
+}
+body {
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 100vh;
+    background-image:url("dessign\ web.png");
+    background:cover;
+    background-attachment: fixed;
+}
+
+.text{
+    text-align:center;
+    color: #ef65e1;    
+    font-size: 30px;
+}
+/* Navbar */
+.navbar {
+  background: #ee55c0;
+  border-radius: 3rem;
+  box-shadow: 0 4px 8px #18c3f3;
+  position: fixed;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 140px;
+  border: 4px solid white;
+  display: flex;
+  justify-content: center; /* Centers the items */
+  padding: 10px 40px; /* Adds inner spacing */
+  gap: 15px;
+}
+
+/* Navbar Items */
+.navbar a,
+.dropdown-toggle {
+  text-decoration-line:none ;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Beautiful hover effect */
+.navbar a:hover,
+.dropdown-toggle:hover {
+    background: rgba(244, 242, 242, 0.2); /* Softer white overlay */
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active state for click effect */
+.navbar a:active,
+.dropdown-toggle:active {
+    transform: scale(0.95);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    font-weight: bold;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Aligns dropdown below */
+    left: 50%;
+    transform: translateX(-50%) scale(0.95); /* Centered & slightly smaller initially */
+    background-color: rgba(192, 235, 37, 0.95); /* Softer background */
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease-in-out;
+    border-radius: 6px;
+  }
+  a {
+    text-decoration: none;
+    color:white;
+  }
+  
+  /* Hover effect on dropdown items */
+  .dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Softer white overlay */
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) scale(1); /* Smooth float effect */
+  }
+  
+  /* Hover Effect on the Button */
+  .dropdown:hover .dropbtn {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+  
+  /* Click Effect */
+  .dropdown-content:active,
+  .dropbtn:active {
+    transform: scale(0.95);
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+.container{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: #703d1a; 
+    border: 4px solid #a65121;
+  }
+  
+  .button1:hover {
+    background-color: #a65121;
+    color: #ffffff;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: #e38743; 
+    border: 4px solid #f5cd6f;
+  }
+  
+  .button2:hover {
+    background-color: #f5cd6f;
+    color: white;
+  }
+  
+  .button3 {
+    background-color: white; 
+    color: #f5cd6f; 
+    border: 4px solid #e38743;
+  }
+  
+  .button3:hover {
+    background-color: #e38743;
+    color: white;
+  }
+.item img{
+  margin-top:15px;
+  height:100%;
+  width:100%;
+}
+.image img{
+  border-radius:8%;
+  margin-top:15px;
+  height:300px;
+  width:400px;
+  box-shadow: 0px 2px 10px;
+  border:5px solid white;
+}
+.name{
+  margin-bottom:2px;
+  background-color:#9bf06d;
+  border-radius:10px;
+  border:5px solid #e38743;
+  size:100px;
+  color:white;
+}
+.information{
+  background-color:#ffe29e;
+  border-radius:10px;
+  border:2px solid #ffe29e;
+  size:100px;
+  color:#a65121;
+  box-shadow: 0px 2px 10px;
+}
+.price{
+  font-style:italic;
+  margin-top:2px;
+  background-color:#ffe29e;
+  border-radius:10px;
+  size:100px;
+  color:#a65121;
+  box-shadow: 0px 2px 10px;
+}
+h1{
+  background-color: #ff9ee0;
+  border-radius:10px;
+  display:inline-block;
+  border:3px solid;
+}
+h4{
+  margin-bottom:2px;
+  background-color:#9ed8ff;
+  border-radius:20px;
+  size:100px;
+  color:white;
+  border:5px solid #9ed8ff;
+}
+ul li{
+  list-style-type: disc;
+  font-size: 15px; /* Sesuai ukuran default H4 */
+  font-weight: bold;
+  color:#1c649e;
+  text-align: left;
+}
+
+.test-1a{
+  background-color: #9ed8ff;
+  border-radius:10px;
+  border:3px solid;
+}
+
+.col-md-7{
+  background-color:#9ed8ff;
+  border-radius:10px;
+  border:3px solid;
+}
